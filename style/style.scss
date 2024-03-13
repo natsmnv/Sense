@@ -1,0 +1,170 @@
+@use './fonts';
+
+$title-font: "Forum", serif;
+$text-font: "Manrope", sans-serif;
+$main-color: #FDE2F3;
+$second-color: #2A2F4F;
+$third-color: #E5BEEC;
+$fourth-color: #917FB3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin img-cover {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@mixin img-contain {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.main-section {
+    background-color: $main-color;
+    padding: 80px 0;
+
+    .wrapper {
+        position: relative;
+
+        .header {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 20px;
+            margin-bottom: 205px;
+    
+            &__logo {
+                display: flex;
+                width: 123px;
+    
+                img {
+                    @include img-cover();
+                }
+            }
+    
+            &__nav {
+    
+                &--link {
+                    font-family: $text-font;
+                    font-weight: 500;
+                    color: $second-color;
+                    font-size: 24px;
+                    margin-right: 34px;
+    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    
+        .main__block {
+            text-align: center;
+
+            .first__ballerina {
+                display: flex;
+                width: 332px;
+                position: absolute;
+                right: 100px;
+                top: 90px;
+
+                img {
+                    @include img-cover();
+                }
+            }
+    
+            .second__ballerina {
+                display: flex;
+                width: 216px;
+                position: absolute;
+                left: 150px;
+                top: 200px;
+
+                img {
+                    @include img-cover();
+                }
+            }
+    
+            &--title {
+                font-family: $title-font;
+                font-size: 256px;
+                letter-spacing: 0.25em;
+                color: $second-color;
+                position: relative;
+                margin-bottom: 26px;
+            }
+
+            &--subtitle {
+                font-family: $text-font;
+                font-size: 64px;
+                color: $fourth-color;
+                letter-spacing: 0.1em;
+                position: relative;
+                margin-bottom: 140px;
+            }
+
+            .contacts {
+                display: flex;
+                position: relative;
+                padding: 0 40px;
+                justify-content: space-between;
+                column-gap: 20px;
+
+                &__scroll {
+                    display: flex;
+                    width: 50px;
+
+                    img {
+                        @include img-contain();
+                    }
+                }
+
+                &__wrapper {
+
+                    .address, .phone {
+                        display: flex;
+                        column-gap: 10px;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        &__img {
+                            display: flex;
+                            width: 25px;
+
+                            img {
+                                @include img-contain();
+                            }
+                        }
+
+                        &__span {
+                            font-family: $text-font;
+                            font-size: 20px;
+                            color: $second-color;
+                        }
+                    }
+
+                    .address {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
