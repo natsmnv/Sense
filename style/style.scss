@@ -43,7 +43,7 @@ a {
         position: relative;
 
         .header {
-            padding: 0 20px;
+            padding: 0 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -66,7 +66,7 @@ a {
                     font-weight: 500;
                     color: $second-color;
                     font-size: 16px;
-                    margin-right: 34px;
+                    margin-right: 35px;
     
                     &:last-child {
                         margin-right: 0;
@@ -164,6 +164,52 @@ a {
                         margin-bottom: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.abous-us-section {
+    background-color: $second-color;
+    padding: 80px 0;
+
+    .about-us__title {
+        font-family: $title-font;
+        color: $main-color;
+        font-size: 48px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .about-us__wrapper {
+
+        .about-us__block {
+            display: flex;
+            column-gap: 60px;
+            margin-bottom: 50px;
+            align-items: center;
+
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                margin-bottom: 0;
+            }
+
+            &--img {
+                display: flex;
+                width: 606px;
+                border-radius: 60px;
+                overflow: hidden;
+
+                img {
+                    @include img-cover();
+                }
+            }
+
+            &--info {
+                max-width: 454px;
+                font-family: $text-font;
+                font-size: 24px;
+                color: $main-color;
             }
         }
     }

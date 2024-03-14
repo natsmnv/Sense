@@ -23,7 +23,7 @@ a {
   position: relative;
 }
 .main-section .wrapper .header {
-  padding: 0 20px;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@ a {
   font-weight: 500;
   color: #2A2F4F;
   font-size: 16px;
-  margin-right: 34px;
+  margin-right: 35px;
 }
 .main-section .wrapper .header__nav--link:last-child {
   margin-right: 0;
@@ -138,4 +138,45 @@ a {
 }
 .main-section .wrapper .main__block .contacts__wrapper .address {
   margin-bottom: 20px;
+}
+
+.abous-us-section {
+  background-color: #2A2F4F;
+  padding: 80px 0;
+}
+.abous-us-section .about-us__title {
+  font-family: "Forum", serif;
+  color: #FDE2F3;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.abous-us-section .about-us__wrapper .about-us__block {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.abous-us-section .about-us__wrapper .about-us__block:nth-child(2) {
+  flex-direction: row-reverse;
+  margin-bottom: 0;
+}
+.abous-us-section .about-us__wrapper .about-us__block--img {
+  display: flex;
+  width: 606px;
+  border-radius: 60px;
+  overflow: hidden;
+}
+.abous-us-section .about-us__wrapper .about-us__block--img img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.abous-us-section .about-us__wrapper .about-us__block--info {
+  max-width: 454px;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  color: #FDE2F3;
 }/*# sourceMappingURL=style.css.map */
