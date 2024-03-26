@@ -334,3 +334,77 @@ p, span {
         }
     }
 }
+
+.teachers-section {
+    background-color: $second-color;
+    padding: 80px 0;
+
+    .teachers__title {
+        font-family: $title-font;
+        font-size: 32px;
+        color: $main-color;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .teachers__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 30px;
+
+        &--prev, &--next {
+            display: flex;
+            width: 90px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            img {
+                @include img-contain();
+            }
+        }
+
+        .content {
+            background-color: $main-color;
+            max-width: 770px;
+            border-radius: 40px;
+            padding: 20px 30px;
+            display: flex;
+            column-gap: 40px;
+            align-items: center;
+
+            &__img {
+                display: flex;
+                width: 330px;
+                height: 330px;
+                border-radius: 50px;
+                overflow: hidden;
+
+                img {
+                    @include img-cover();
+                }
+            }
+
+            &__info {
+                max-width: 340px;
+
+                .text {
+                    font-family: $text-font;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $second-color;
+
+                    &__highlighted {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+}
