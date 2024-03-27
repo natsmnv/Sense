@@ -159,16 +159,17 @@ p, span {
 .abous-us-section .about-us__title {
   font-family: "Forum", serif;
   color: #FDE2F3;
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 50px;
   text-align: center;
 }
 .abous-us-section .about-us__wrapper .about-us__block {
   display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
   margin-bottom: 50px;
   align-items: center;
+  justify-content: space-evenly;
 }
 .abous-us-section .about-us__wrapper .about-us__block:nth-child(2) {
   flex-direction: row-reverse;
@@ -176,7 +177,7 @@ p, span {
 }
 .abous-us-section .about-us__wrapper .about-us__block--img {
   display: flex;
-  width: 606px;
+  width: 470px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -189,8 +190,9 @@ p, span {
 .abous-us-section .about-us__wrapper .about-us__block--info {
   max-width: 454px;
   font-family: "Manrope", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   color: #FDE2F3;
+  font-weight: 500;
 }
 
 .styles-section {
@@ -199,24 +201,24 @@ p, span {
 }
 .styles-section .styles__title {
   font-family: "Forum", serif;
-  font-size: 42px;
+  font-size: 32px;
   color: #FDE2F3;
   text-align: center;
   margin-bottom: 50px;
 }
 .styles-section .styles__wrapper .buttons {
   display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  justify-content: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
   margin-bottom: 50px;
 }
 .styles-section .styles__wrapper .buttons__button {
   font-family: "Manrope", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   color: #FDE2F3;
   border: 1px solid #FDE2F3;
-  padding: 10px 38px;
+  padding: 10px 30px;
   border-radius: 30px;
   background: transparent;
   font-weight: 500;
@@ -235,29 +237,29 @@ p, span {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   align-items: center;
 }
 .styles-section .styles__wrapper .content__block .descr {
-  max-width: 448px;
+  max-width: 366px;
   text-align: center;
 }
 .styles-section .styles__wrapper .content__block .descr__text {
   font-family: "Manrope", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   color: #FDE2F3;
   text-align: left;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 .styles-section .styles__wrapper .content__block .descr__text--highlighted {
   font-weight: 700;
 }
 .styles-section .styles__wrapper .content__block .descr__btn {
   font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 10px;
+  padding: 10px 20px;
   border: 1px solid #FDE2F3;
   background: transparent;
   border-radius: 30px;
@@ -271,8 +273,8 @@ p, span {
 }
 .styles-section .styles__wrapper .content__block--img {
   display: flex;
-  max-width: 420px;
-  max-height: 420px;
+  max-width: 340px;
+  max-height: 340px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -354,4 +356,29 @@ p, span {
 }
 .teachers-section .teachers__wrapper .hide {
   display: none;
+}
+
+.schedule-section {
+  padding: 80px 0;
+  background-color: #FDE2F3;
+}
+.schedule-section .schedule__title {
+  font-family: "Forum", serif;
+  font-size: 32px;
+  color: #2A2F4F;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.schedule-section .schedule__table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+.schedule-section .schedule__table tr td {
+  border: 1px solid #2A2F4F;
+  font-family: "Manrope", sans-serif;
+  color: #2A2F4F;
+  padding: 20px 28px;
+  text-align: center;
+  line-height: 22px;
 }/*# sourceMappingURL=style.css.map */

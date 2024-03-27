@@ -188,7 +188,7 @@ p, span {
     .about-us__title {
         font-family: $title-font;
         color: $main-color;
-        font-size: 48px;
+        font-size: 32px;
         margin-bottom: 50px;
         text-align: center;
     }
@@ -197,9 +197,10 @@ p, span {
 
         .about-us__block {
             display: flex;
-            column-gap: 60px;
+            column-gap: 46px;
             margin-bottom: 50px;
             align-items: center;
+            justify-content: space-evenly;
 
             &:nth-child(2) {
                 flex-direction: row-reverse;
@@ -208,7 +209,7 @@ p, span {
 
             &--img {
                 display: flex;
-                width: 606px;
+                width: 470px;
                 border-radius: 50px;
                 overflow: hidden;
 
@@ -220,8 +221,9 @@ p, span {
             &--info {
                 max-width: 454px;
                 font-family: $text-font;
-                font-size: 24px;
+                font-size: 16px;
                 color: $main-color;
+                font-weight: 500;
             }
         }
     }
@@ -233,7 +235,7 @@ p, span {
 
     .styles__title {
         font-family: $title-font;
-        font-size: 42px;
+        font-size: 32px;
         color: $main-color;
         text-align: center;
         margin-bottom: 50px;
@@ -243,16 +245,16 @@ p, span {
 
         .buttons {
             display: flex;
-            justify-content: space-between;
-            column-gap: 20px;
+            justify-content: center;
+            column-gap: 48px;
             margin-bottom: 50px;
 
             &__button {
                 font-family: $text-font;
-                font-size: 24px;
+                font-size: 16px;
                 color: $main-color;
                 border: 1px solid $main-color;
-                padding: 10px 38px;
+                padding: 10px 30px;
                 border-radius: 30px;
                 background: transparent;
                 font-weight: 500;
@@ -277,19 +279,19 @@ p, span {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                column-gap: 80px;
+                column-gap: 50px;
                 align-items: center;
 
                 .descr {
-                    max-width: 448px;
+                    max-width: 366px;
                     text-align: center;
 
                     &__text {
                         font-family: $text-font;
-                        font-size: 24px;
+                        font-size: 16px;
                         color: $main-color;
                         text-align: left;
-                        margin-bottom: 65px;
+                        margin-bottom: 30px;
 
                         &--highlighted {
                             font-weight: 700;
@@ -298,9 +300,9 @@ p, span {
 
                     &__btn {
                         font-family: $text-font;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-weight: 600;
-                        padding: 10px;
+                        padding: 10px 20px;
                         border: 1px solid $main-color;
                         background: transparent;
                         border-radius: 30px;
@@ -317,8 +319,8 @@ p, span {
 
                 &--img {
                     display: flex;
-                    max-width: 420px;
-                    max-height: 420px;
+                    max-width: 340px;
+                    max-height: 340px;
                     border-radius: 50px;
                     overflow: hidden;
 
@@ -405,6 +407,37 @@ p, span {
 
         .hide {
             display: none;
+        }
+    }
+}
+
+.schedule-section {
+    padding: 80px 0;
+    background-color: $main-color;
+
+    .schedule__title {
+        font-family: $title-font;
+        font-size: 32px;
+        color: $second-color;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .schedule__table {
+        display: flex;
+        justify-content: center;
+        border-collapse: collapse;
+
+        tr {
+
+            td {
+                border: 1px solid $second-color;
+                font-family: $text-font;
+                color: $second-color;
+                padding: 20px 28px;
+                text-align: center;
+                line-height: 22px;
+            }
         }
     }
 }
