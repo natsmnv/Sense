@@ -23,10 +23,6 @@ a {
   text-decoration: none;
 }
 
-p, span {
-  line-height: 33px;
-}
-
 .main-section {
   background-color: #FDE2F3;
   padding: 80px 0;
@@ -192,7 +188,6 @@ p, span {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   color: #FDE2F3;
-  font-weight: 500;
 }
 
 .styles-section {
@@ -350,6 +345,7 @@ p, span {
   font-size: 16px;
   font-weight: 500;
   color: #2A2F4F;
+  margin-bottom: 20px;
 }
 .teachers-section .teachers__wrapper .content__info .text__highlighted {
   font-weight: 600;
@@ -381,4 +377,98 @@ p, span {
   padding: 20px 28px;
   text-align: center;
   line-height: 22px;
+}
+
+.prices-section {
+  background-color: #FDE2F3;
+  padding: 80px 0;
+}
+.prices-section .prices__title {
+  font-family: "Forum", serif;
+  font-size: 32px;
+  color: #2A2F4F;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.prices-section .prices__subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  color: #2A2F4F;
+  margin-bottom: 30px;
+}
+.prices-section .prices__blocks {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.prices-section .prices__blocks:last-child {
+  margin-bottom: 0;
+}
+.prices-section .prices__blocks .groups {
+  background-color: #E5BEEC;
+  padding: 30px 68px;
+  border-radius: 20px;
+}
+.prices-section .prices__blocks .groups__text {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  color: #2A2F4F;
+  margin: 0 0 20px 0;
+}
+.prices-section .prices__blocks .groups__text:first-child {
+  border-bottom: 1px solid #917FB3;
+  padding-bottom: 20px;
+}
+.prices-section .prices__blocks .groups__block--text:first-child {
+  margin-bottom: 10px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.prices-section .prices__blocks .groups__btn {
+  padding: 6px 30px;
+  background-color: transparent;
+  border: 1px solid #917FB3;
+  border-radius: 30px;
+  color: #2A2F4F;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+}
+.prices-section .prices__blocks .groups__btn:hover {
+  cursor: pointer;
+  background-color: #2A2F4F;
+  color: #E5BEEC;
+}
+.prices-section .prices__blocks .individual {
+  background-color: #E5BEEC;
+  padding: 30px 68px;
+  border-radius: 20px;
+}
+.prices-section .prices__blocks .individual__text {
+  font-family: "Manrope", sans-serif;
+  color: #2A2F4F;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.prices-section .prices__blocks .individual__text:first-child {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #917FB3;
+  margin-bottom: 10px;
+}
+.prices-section .prices__blocks .individual__btn {
+  padding: 6px 30px;
+  background-color: transparent;
+  border: 1px solid #917FB3;
+  border-radius: 30px;
+  color: #2A2F4F;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+}
+.prices-section .prices__blocks .individual__btn:hover {
+  cursor: pointer;
+  background-color: #2A2F4F;
+  color: #E5BEEC;
 }/*# sourceMappingURL=style.css.map */
