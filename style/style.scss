@@ -443,82 +443,6 @@ p, span {
     }
 }
 
-// .prices-section {
-//     padding: 80px 0;
-//     background-color: $main-color;
-
-//     .prices__title {
-//         font-family: $title-font;
-//         font-size: 32px;
-//         color: $second-color;
-//         margin-bottom: 50px;
-//         text-align: center;
-//     }
-    
-//     .prices__subtitle {
-//         font-family: $text-font;
-//         font-size: 20px;
-//         font-weight: 500;
-//         color: $second-color;
-//         margin-bottom: 30px;
-//     }
-
-//     .prices__blocks {
-//         margin-bottom: 50px;
-//         display: flex;
-//         flex-direction: row;
-//         column-gap: 30px;
-//         justify-content: space-between;
-//         text-align: center;
-
-//         .info {
-//             max-width: 370px;
-//             background-color: $third-color;
-//             padding: 30px 68px;
-//             border-radius: 20px;
-
-//             &__text {
-//                 font-family: $text-font;
-//                 font-size: 20px;
-//                 color: $second-color;
-//                 margin-bottom: 20px;
-
-//                 &:nth-child(3n) {
-//                     margin-bottom: 10px;
-//                 }
-
-//                 &:first-child {
-//                     border-bottom: 1px solid $fourth-color;
-//                     padding: 0 0 20px 0;
-//                 }
-//             }
-
-//             .line {
-//                 width: 234px;
-//             }
-
-//             .individual {
-//                 margin-bottom: 10px;
-//                 padding: 0 0 10px 0;
-
-//                 // &:nth-child(2n) {
-//                 //     margin-bottom: 20px;
-//                 // }
-//             }
-
-//             &__btn {
-//                 padding: 6px 30px;
-//                 border: 1px solid $fourth-color;
-//                 border-radius: 30px;
-//                 color: $second-color;
-//                 font-family: $text-font;
-//                 font-size: 24px;
-//                 background-color: transparent;
-//             }
-//         }
-//     }
-// }
-
 .prices-section {
     background-color: $main-color;
     padding: 80px 0;
@@ -635,6 +559,102 @@ p, span {
                     cursor: pointer;
                     background-color: $second-color;
                     color: $third-color;
+                }
+            }
+        }
+    }
+}
+
+.qa-section {
+    background-color: $main-color;
+    padding: 80px 0;
+
+    .qa__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pictures {
+
+            &__picture {
+                display: flex;
+                // justify-content: flex-end;
+                height: 415px;
+                width: 300px;
+                border-radius: 50px;
+                overflow: hidden;
+
+                img {
+                    @include img-cover();
+                }
+
+            }
+            .layout {
+                margin-top: -130px;
+                margin-left: 150px;
+            }
+        }
+
+        .info {
+            margin-left: 48px;
+
+            &__title {
+                font-family: $title-font;
+                font-size: 32px;
+                color: $second-color;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            &__block {
+                background-color: $second-color;
+                padding: 40px 20px;
+                border-radius: 50px;
+                max-width: 459px;
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    border: 1px solid $main-color;
+                    border-radius: 50px;
+                    padding: 10px 20px;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &__question {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &--text {
+                            font-family: $text-font;
+                            font-size: 20px;
+                            color: $main-color;
+                        }
+
+                        &--arrow {
+                            display: flex;
+                            width: 30px;
+
+                            img {
+                                @include img-cover();
+                            }
+                        }
+                    }
+
+                    &__answer {
+                        font-family: $text-font;
+                        font-size: 16px;
+                        color: $main-color;
+                    }
                 }
             }
         }
