@@ -793,3 +793,52 @@ p, span {
         }
     }
 }
+
+.footer-section {
+    background-color: $main-color;
+    padding: 80px 0;
+
+    .footer__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--logo {
+            display: flex;
+            width: 123px;
+
+            img {
+                @include img-contain();
+            }
+        }
+
+        .links {
+
+            &__link {
+                font-family: $text-font;
+                font-weight: 500;
+                font-size: 16px;
+                color: $second-color;
+                margin-right: 48px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            column-gap: 30px;
+
+            &__link {
+                display: flex;
+                width: 30px;
+
+                img {
+                    @include img-cover();
+                }
+            }
+        }
+    }
+}
