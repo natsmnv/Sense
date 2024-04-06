@@ -515,6 +515,7 @@ p, span {
                 color: $second-color;
                 font-family: $text-font;
                 font-size: 24px;
+                transition: all 0.5s ease;
 
                 &:hover {
                     cursor: pointer;
@@ -657,6 +658,78 @@ p, span {
                     }
                 }
             }
+        }
+    }
+}
+
+.form-section {
+    background-color: $second-color;
+    padding: 80px 0;
+
+    .form__block {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .info {
+
+            &__title {
+                font-family: $title-font;
+                font-size: 32px;
+                color: $main-color;
+                margin-bottom: 50px;
+            }
+
+            &__form {
+
+                &--input {
+                    border: none;
+                    border-bottom: 1px solid $main-color;
+                    background-color: transparent;
+                    padding-left: 10px;
+                    margin-bottom: 50px;
+                    width: 100%;
+                    outline: none;
+                    color: $main-color;
+                    font-size: 16px;
+                    
+                    &::placeholder {
+                        font-family: $text-font;
+                        color: $main-color;
+                        font-size: 16px;
+                    }
+
+                    &:focus::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+
+            &__btn {
+                padding: 20px 221px;
+                background-color: transparent;
+                border: 1px solid $main-color;
+                border-radius: 50px;
+                font-family: $text-font;
+                font-size: 20px;
+                color: $main-color;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: $second-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &--img {
+            display: flex;
+            height: 526px;
+            width: 536px;
+            overflow: hidden;
+            border-radius: 50px;
         }
     }
 }

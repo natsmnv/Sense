@@ -436,6 +436,7 @@ a {
   color: #2A2F4F;
   font-family: "Manrope", sans-serif;
   font-size: 24px;
+  transition: all 0.5s ease;
 }
 .prices-section .prices__blocks .groups__btn:hover {
   cursor: pointer;
@@ -554,4 +555,71 @@ a {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   color: #FDE2F3;
+}
+
+.form-section {
+  background-color: #2A2F4F;
+  padding: 80px 0;
+}
+.form-section .form__block {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-section .form__block .info__title {
+  font-family: "Forum", serif;
+  font-size: 32px;
+  color: #FDE2F3;
+  margin-bottom: 50px;
+}
+.form-section .form__block .info__form--input {
+  border: none;
+  border-bottom: 1px solid #FDE2F3;
+  background-color: transparent;
+  padding-left: 10px;
+  margin-bottom: 50px;
+  width: 100%;
+  outline: none;
+  color: #FDE2F3;
+  font-size: 16px;
+}
+.form-section .form__block .info__form--input::-moz-placeholder {
+  font-family: "Manrope", sans-serif;
+  color: #FDE2F3;
+  font-size: 16px;
+}
+.form-section .form__block .info__form--input::placeholder {
+  font-family: "Manrope", sans-serif;
+  color: #FDE2F3;
+  font-size: 16px;
+}
+.form-section .form__block .info__form--input:focus::-moz-placeholder {
+  color: transparent;
+}
+.form-section .form__block .info__form--input:focus::placeholder {
+  color: transparent;
+}
+.form-section .form__block .info__btn {
+  padding: 20px 221px;
+  background-color: transparent;
+  border: 1px solid #FDE2F3;
+  border-radius: 50px;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  color: #FDE2F3;
+  transition: all 0.5s ease;
+}
+.form-section .form__block .info__btn:hover {
+  background-color: #FDE2F3;
+  color: #2A2F4F;
+  cursor: pointer;
+}
+.form-section .form__block--img {
+  display: flex;
+  height: 526px;
+  width: 536px;
+  overflow: hidden;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
