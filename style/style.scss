@@ -555,6 +555,7 @@ p, span {
                 color: $second-color;
                 font-family: $text-font;
                 font-size: 24px;
+                transition: all 0.5s ease;
 
                 &:hover {
                     cursor: pointer;
@@ -726,10 +727,14 @@ p, span {
 
         &--img {
             display: flex;
-            height: 526px;
+            height: 536px;
             width: 536px;
             overflow: hidden;
             border-radius: 50px;
+
+            img {
+                @include img-cover();
+            }
         }
     }
 }
@@ -838,6 +843,69 @@ p, span {
                 img {
                     @include img-cover();
                 }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .container {
+        max-width: 964px;
+    }
+
+    .main-section {
+        .wrapper {
+            .main__block {
+                .first__ballerina {
+                    right: 30px;
+                }
+        
+                .second__ballerina {
+                    left: 100px;
+                }
+            }
+        }
+    }
+    
+    .schedule-section {
+        .schedule__table {
+            tr {
+                td {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    
+    .prices-section {
+    
+        .prices__blocks {
+            .groups {
+                padding: 30px 60px;
+            }
+    
+            .individual {
+                padding: 30px 65px;
+            }
+        }
+    }
+    
+    .form-section {
+        .form__block {
+            display: flex;
+            column-gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+    
+            .info {
+                &__btn {
+                    padding: 20px 150px;
+                }
+            }
+    
+            &--img {
+                height: 450px;
+                width: 450px;
             }
         }
     }
