@@ -77,4 +77,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('load', changeTable);
     window.addEventListener('resize', changeTable);
+
+
+
+    //Styles
+
+    const buttons = document.querySelectorAll('.buttons button');
+    const blocks = document.querySelectorAll('.content__block');
+
+    buttons.forEach((button, i) => {
+        button.addEventListener('click', () => {
+            blocks.forEach((item, index) => {
+                item.classList.add('hide');
+                if (i == index) {
+                    item.classList.remove('hide');
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    button.classList.add('active');
+                }
+            })
+        });
+    });
 });
