@@ -31,10 +31,6 @@ a {
     text-decoration: none;
 }
 
-p, span {
-    // line-height: 33px;
-}
-
 @mixin img-cover {
     max-width: 100%;
     max-height: 100%;
@@ -389,7 +385,7 @@ p, span {
             }
 
             &__info {
-                max-width: 340px;
+                max-width: 300px;
 
                 .text {
                     font-family: $text-font;
@@ -862,6 +858,7 @@ p, span {
         
                 .second__ballerina {
                     left: 100px;
+                    top: 120px;
                 }
 
                 &--title {
@@ -887,7 +884,7 @@ p, span {
         .schedule__table {
             tr {
                 td {
-                    padding: 20px 6px;
+                    padding: 20px 4px;
                 }
             }
         }
@@ -1036,7 +1033,7 @@ p, span {
                 .second__ballerina {
                     width: 130px;
                     left: 100px;
-                    top: 110px;
+                    top: 100px;
                 }
         
                 &--title {
@@ -1134,15 +1131,59 @@ p, span {
         padding: 60px 0;
 
         .schedule__table {
+            flex-direction: column;
             table {
+                margin-bottom: 20px;
+
                 tbody {
                     tr {
                         td {
                             font-size: 14px;
-                            padding: 20px 4px;
                         }
                     }
                 }
+            }
+
+            .select__wrapper {
+                text-align: center;
+
+                .schedule-label {
+                    display: inline-block;
+                    margin-right: 35px;
+                    font-size: 14px;
+                    font-family: $text-font;
+                    color: $second-color;
+                }
+
+                &--block {
+                    position: relative;
+                    display: inline-block;
+                    
+                    #day {
+                        display: inline-block;
+                        padding: 4px 10px;
+                        border: 1px solid $second-color;
+                        border-radius: 30px;
+                        background-color: transparent;
+                        font-family: $text-font;
+                        font-size: 14px;
+                        color: $second-color;
+                        appearance: none;
+                        min-width: 120px;
+
+                        option {
+                            background-color: $main-color;
+                        }
+                    }
+
+                    .arrow {
+                        position: absolute;
+                        display: inline-block;
+                        top: 6px;
+                        right: 10px;
+                    }
+                }
+
             }
         }
     }
@@ -1360,7 +1401,7 @@ p, span {
                             }
 
                             &__span {
-                                font-size: 14px;
+                                font-size: 12px;
                             }
                         }
     
@@ -1393,7 +1434,7 @@ p, span {
                 }
 
                 &--img {
-                    width: 344px;
+                    width: 314px;
                 }
     
                 &--info {
@@ -1498,7 +1539,7 @@ p, span {
                 tbody {
                     tr {
                         td {
-                            padding: 10px 38px;
+                            padding: 10px 22px;
                         }
                     }
                 }
@@ -1622,6 +1663,10 @@ p, span {
                         &__icon {
                             width: 22px;
                         }
+
+                        &__text {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -1638,6 +1683,12 @@ p, span {
         .footer__block {
             &--logo {
                 width: 70px;
+            }
+
+            .links {
+                &__link {
+                    font-size: 14px;
+                }
             }
         }
     }

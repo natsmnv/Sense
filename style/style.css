@@ -338,7 +338,7 @@ a {
      object-fit: cover;
 }
 .teachers-section .teachers__wrapper .content__info {
-  max-width: 340px;
+  max-width: 300px;
 }
 .teachers-section .teachers__wrapper .content__info .text {
   font-family: "Manrope", sans-serif;
@@ -743,6 +743,7 @@ a {
   }
   .main-section .wrapper .main__block .second__ballerina {
     left: 100px;
+    top: 120px;
   }
   .main-section .wrapper .main__block--title {
     font-size: 190px;
@@ -755,7 +756,7 @@ a {
     padding: 10px 18px;
   }
   .schedule-section .schedule__table tr td {
-    padding: 20px 6px;
+    padding: 20px 4px;
   }
   .prices-section .prices__blocks .groups {
     padding: 20px 40px;
@@ -856,7 +857,7 @@ a {
   .main-section .wrapper .main__block .second__ballerina {
     width: 130px;
     left: 100px;
-    top: 110px;
+    top: 100px;
   }
   .main-section .wrapper .main__block--title {
     font-size: 130px;
@@ -923,9 +924,51 @@ a {
   .schedule-section {
     padding: 60px 0;
   }
+  .schedule-section .schedule__table {
+    flex-direction: column;
+  }
+  .schedule-section .schedule__table table {
+    margin-bottom: 20px;
+  }
   .schedule-section .schedule__table table tbody tr td {
     font-size: 14px;
-    padding: 20px 4px;
+  }
+  .schedule-section .schedule__table .select__wrapper {
+    text-align: center;
+  }
+  .schedule-section .schedule__table .select__wrapper .schedule-label {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    color: #2A2F4F;
+  }
+  .schedule-section .schedule__table .select__wrapper--block {
+    position: relative;
+    display: inline-block;
+  }
+  .schedule-section .schedule__table .select__wrapper--block #day {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #2A2F4F;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    color: #2A2F4F;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    min-width: 120px;
+  }
+  .schedule-section .schedule__table .select__wrapper--block #day option {
+    background-color: #FDE2F3;
+  }
+  .schedule-section .schedule__table .select__wrapper--block .arrow {
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    right: 10px;
   }
   .prices-section {
     padding: 60px 0;
@@ -1079,7 +1122,7 @@ a {
     width: 14px;
   }
   .main-section .wrapper .main__block .contacts__wrapper .address__span, .main-section .wrapper .main__block .contacts__wrapper .phone__span {
-    font-size: 14px;
+    font-size: 12px;
   }
   .main-section .wrapper .main__block .contacts__wrapper .address {
     margin-bottom: 5px;
@@ -1102,7 +1145,7 @@ a {
     flex-direction: column;
   }
   .abous-us-section .about-us__wrapper .about-us__block--img {
-    width: 344px;
+    width: 314px;
   }
   .abous-us-section .about-us__wrapper .about-us__block--info {
     max-width: 343px;
@@ -1176,7 +1219,7 @@ a {
     margin-bottom: 30px;
   }
   .schedule-section .schedule__table table tbody tr td {
-    padding: 10px 38px;
+    padding: 10px 22px;
   }
   .prices-section {
     padding: 40px 0;
@@ -1262,6 +1305,9 @@ a {
   .contacts-section .contacts__block .info__wrapper .element__icon {
     width: 22px;
   }
+  .contacts-section .contacts__block .info__wrapper .element__text {
+    font-size: 14px;
+  }
   .contacts-section .contacts__block--img {
     display: none;
   }
@@ -1270,5 +1316,8 @@ a {
   }
   .footer-section .footer__block--logo {
     width: 70px;
+  }
+  .footer-section .footer__block .links__link {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

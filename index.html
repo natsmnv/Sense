@@ -208,11 +208,11 @@
                 <table>
                     <tr>
                         <td></td>
-                        <td>Понеділок</td>
-                        <td>Вівторок</td>
-                        <td>Середа</td>
-                        <td>Четвер</td>
-                        <td>П’ятниця</td>
+                        <td data-column="monday">Понеділок</td>
+                        <td data-column="tuesday">Вівторок</td>
+                        <td data-column="wednesday">Середа</td>
+                        <td data-column="thursday">Четвер</td>
+                        <td data-column="friday">П'ятниця</td>
                     </tr>
                     <tr>
                         <td>10:00-11:00</td>
@@ -255,6 +255,22 @@
                         <td>Contemporary</td>
                     </tr>
                 </table>
+
+                <div class="select__wrapper">
+                    <label for="day" class="hide schedule-label">Оберіть день: </label>
+                    <div class="select__wrapper--block">
+                        <select class="hide" name="day" id="day">
+                            <option value="monday" id="monday">Понеділок</option>
+                            <option value="tuesday" id="tuesday">Вівторок</option>
+                            <option value="wednesday" id="wednesday">Середа</option>
+                            <option value="thursday" id="thursday">Четвер</option>
+                            <option value="friday" id="friday">П'ятниця</option>
+                        </select>
+                        <div class="arrow hide">
+                            <img src="./img/arrow down blue.svg" alt="arrow">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
