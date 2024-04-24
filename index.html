@@ -375,12 +375,15 @@
             <div class="form__block">
                 <div class="form__block--info info">
                     <h3 class="info__title">Хочу танцювати!</h3>
-                    <form action="" class="info__form">
-                        <input type="text" class="info__form--input" placeholder="Ім’я">
-                        <br>
-                        <input type="text" class="info__form--input" placeholder="Телефон">
+                    <form action="/" class="info__form">
+                        <div class="info__form--wrapper">
+                            <input type="text" name="name" class="info__input" placeholder="Ім’я">
+                        </div>
+                        <div class="info__form--wrapper">
+                            <input type="phone" name="phone" class="info__input" placeholder="Телефон">
+                        </div>
+                        <button class="info__btn">Приєднатися</button>
                     </form>
-                    <button class="info__btn">Приєднатися</button>
                 </div>
                 <div class="form__block--img">
                     <img src="./img/contacts-img.jpg" alt="Form img">

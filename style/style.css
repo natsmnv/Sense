@@ -579,7 +579,7 @@ a {
   color: #FDE2F3;
   margin-bottom: 50px;
 }
-.form-section .form__block .info__form--input {
+.form-section .form__block .info__form--wrapper .info__input {
   border: none;
   border-bottom: 1px solid #FDE2F3;
   background-color: transparent;
@@ -590,20 +590,20 @@ a {
   color: #FDE2F3;
   font-size: 16px;
 }
-.form-section .form__block .info__form--input::-moz-placeholder {
+.form-section .form__block .info__form--wrapper .info__input::-moz-placeholder {
   font-family: "Manrope", sans-serif;
   color: #FDE2F3;
   font-size: 16px;
 }
-.form-section .form__block .info__form--input::placeholder {
+.form-section .form__block .info__form--wrapper .info__input::placeholder {
   font-family: "Manrope", sans-serif;
   color: #FDE2F3;
   font-size: 16px;
 }
-.form-section .form__block .info__form--input:focus::-moz-placeholder {
+.form-section .form__block .info__form--wrapper .info__input:focus::-moz-placeholder {
   color: transparent;
 }
-.form-section .form__block .info__form--input:focus::placeholder {
+.form-section .form__block .info__form--wrapper .info__input:focus::placeholder {
   color: transparent;
 }
 .form-section .form__block .info__btn {

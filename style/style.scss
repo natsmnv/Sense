@@ -673,8 +673,9 @@ a {
 
             &__form {
 
-                &--input {
-                    border: none;
+                &--wrapper {
+                    .info__input {
+                        border: none;
                     border-bottom: 1px solid $main-color;
                     background-color: transparent;
                     padding-left: 10px;
@@ -692,6 +693,7 @@ a {
 
                     &:focus::placeholder {
                         color: transparent;
+                    }
                     }
                 }
             }
