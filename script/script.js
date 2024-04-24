@@ -221,4 +221,30 @@ document.addEventListener('DOMContentLoaded', () => {
     goToSection(headerLinksWrapper);
 
     goToSection(footerLinksWrapper);
+
+
+
+    // Go to form-section
+
+    const stylesBtnWrapper = document.querySelector('.styles__wrapper--content');
+    const pricesBtnWrapper = document.querySelectorAll('.prices__blocks');
+    const formSection = document.querySelector('.form-section');
+    
+    function goToFormSection (wrapper) {
+        wrapper.addEventListener('click', (e) => {
+            if (e.target.tagName == "BUTTON") {
+                const sectionTop = formSection.offsetTop;
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    }
+
+    goToFormSection(stylesBtnWrapper);
+
+    pricesBtnWrapper.forEach(prices => {
+        goToFormSection(prices);
+    });
 });
