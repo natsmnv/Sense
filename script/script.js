@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Schedule
 
-    let index;
+    let scheduleIndex;
 
     const timeColumn = document.querySelector('tr');
     const daysRow = timeColumn.querySelectorAll('td:not(:first-child)');
@@ -43,19 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switch(day) {
             case 'monday':
-                index = 1;
+                scheduleIndex = 1;
                 break;
             case 'tuesday':
-                index = 2;
+                scheduleIndex = 2;
                 break;
             case 'wednesday':
-                index = 3;
+                scheduleIndex = 3;
                 break;
             case 'thursday':
-                index = 4;
+                scheduleIndex = 4;
                 break;
             case 'friday':
-                index = 5;
+                scheduleIndex = 5;
                 break;
         }
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (let i = 0; i < allCells.length; i++) {
                     if (i % 6 == 0) {
                         allCells[i].style.display = 'table-cell';
-                        allCells[i + index].style.display = 'table-cell';
+                        allCells[i + scheduleIndex].style.display = 'table-cell';
                     }
                 }
             }
@@ -82,16 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Styles
 
-    const buttons = document.querySelectorAll('.buttons button');
-    const blocks = document.querySelectorAll('.content__block');
+    const stylesBtns = document.querySelectorAll('.buttons button');
+    const stylesBlocks = document.querySelectorAll('.content__block');
 
-    buttons.forEach((button, i) => {
+    stylesBtns.forEach((button, i) => {
         button.addEventListener('click', () => {
-            blocks.forEach((item, index) => {
+            stylesBlocks.forEach((item, index) => {
                 item.classList.add('hide');
                 if (i == index) {
                     item.classList.remove('hide');
-                    buttons.forEach(btn => {
+                    stylesBtns.forEach(btn => {
                         btn.classList.remove('active');
                     });
                     button.classList.add('active');
@@ -116,6 +116,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 sibling.classList.remove('show');
                 sibling.classList.add('hide');
             }
-        })
-    })
+        });
+    });
+
+
+
+    // Teachers 
+
+    const prevSliderBtn = document.querySelector('.teachers__wrapper--prev');
+    const nextSliderBtn = document.querySelector('.teachers__wrapper--next');
+    const slides = document.querySelectorAll('.teachers__wrapper--content');
+
+    let sliderIndex = 1;
+    const totalSliderIndex = slides.length;
+
+    function showSlide (index) {
+        slides.forEach(slide => {
+            slide.classList.remove('show');
+            slide.classList.add('hide');
+        });
+
+        if (index > totalSliderIndex) {
+            sliderIndex = 1;
+        }
+
+        if (index === 0) {
+            sliderIndex = totalSliderIndex;
+        }
+
+        slides[sliderIndex - 1].classList.remove('hide');
+        slides[sliderIndex - 1].classList.add('show');
+    }
+
+    showSlide(sliderIndex);
+
+    prevSliderBtn.addEventListener('click', () => {
+        showSlide(--sliderIndex);
+    });
+
+    nextSliderBtn.addEventListener('click', () => {
+        showSlide(++sliderIndex);
+    });
 });

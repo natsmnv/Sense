@@ -913,6 +913,7 @@ a {
   }
   .teachers-section .teachers__wrapper .content {
     padding: 10px;
+    min-width: 415px;
   }
   .teachers-section .teachers__wrapper .content__img {
     width: 260px;
@@ -1196,10 +1197,12 @@ a {
   .teachers-section .teachers__wrapper .content {
     padding: 20px;
     flex-direction: column;
+    min-height: 402px;
+    min-width: 0;
   }
   .teachers-section .teachers__wrapper .content__img {
-    width: 208px;
-    height: 208px;
+    width: 138px;
+    height: 138px;
     margin-bottom: 20px;
   }
   .teachers-section .teachers__wrapper .content__info {

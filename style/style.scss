@@ -1114,6 +1114,7 @@ a {
     
             .content {
                 padding: 10px;
+                min-width: 415px;
 
                 &__img {
                     width: 260px;
@@ -1504,10 +1505,12 @@ a {
             .content {
                 padding: 20px;
                 flex-direction: column;
+                min-height: 402px;
+                min-width: 0;
 
                 &__img {
-                    width: 208px;
-                    height: 208px;
+                    width: 138px;
+                    height: 138px;
                     margin-bottom: 20px;
                 }
     
