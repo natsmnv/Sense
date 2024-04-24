@@ -191,4 +191,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     bindPostData(form);
+
+
+    // Header and Footer Navigation
+
+    const headerLinksWrapper = document.querySelector('.header__nav');
+    const footerLinksWrapper = document.querySelector('.footer__block--links');
+    const sections = document.querySelectorAll('section');
+
+    function goToSection (wrapper) {
+        wrapper.addEventListener('click', (e) => {
+            const target = e.target;
+            const dataSectionName = target.dataset.section;
+    
+            sections.forEach(section => {
+                const sectionName = (section.classList.value).slice(0, -8);
+    
+                if (dataSectionName === sectionName) {
+                    const sectionTop = section.offsetTop;
+                    window.scrollTo({
+                        top: sectionTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    }
+
+    goToSection(headerLinksWrapper);
+
+    goToSection(footerLinksWrapper);
 });
