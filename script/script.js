@@ -99,4 +99,23 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         });
     });
+
+
+
+    // Q/A 
+
+    const questions = document.querySelectorAll('.content__question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', (e) => {
+            const sibling = e.currentTarget.nextElementSibling;
+            if (sibling.classList.contains('hide')) {
+                sibling.classList.remove('hide');
+                sibling.classList.add('show');
+            } else {
+                sibling.classList.remove('show');
+                sibling.classList.add('hide');
+            }
+        })
+    })
 });
