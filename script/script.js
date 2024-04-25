@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         btn.classList.remove('active');
                     });
                     button.classList.add('active');
+                    item.style.animation = 'showOpacity .5s linear';
                 }
             })
         });
@@ -193,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bindPostData(form);
 
 
+    
     // Header and Footer Navigation
 
     const headerLinksWrapper = document.querySelector('.header__nav');
